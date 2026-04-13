@@ -13,9 +13,7 @@
       --card:   #ffffff;
       --border: #d8e6f2;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       background: var(--bg);
       color: var(--dark);
@@ -23,8 +21,6 @@
       font-size: 15px;
       line-height: 1.7;
     }
-
-    /* ── Header ── */
     header {
       background: var(--dark);
       padding: 28px 24px 24px;
@@ -49,8 +45,6 @@
       color: var(--muted);
       letter-spacing: 0.3px;
     }
-
-    /* ── Lang switcher ── */
     .lang-bar {
       display: flex;
       justify-content: center;
@@ -76,14 +70,11 @@
       border-color: var(--accent);
       color: #fff;
     }
-
-    /* ── Content ── */
     main {
       max-width: 720px;
       margin: 32px auto;
       padding: 0 20px 60px;
     }
-
     .section {
       background: var(--card);
       border: 1px solid var(--border);
@@ -91,7 +82,6 @@
       padding: 24px 28px;
       margin-bottom: 16px;
     }
-
     .section h2 {
       font-size: 13px;
       font-weight: 700;
@@ -102,25 +92,15 @@
       padding-bottom: 10px;
       border-bottom: 1px solid var(--border);
     }
-
     .section h3 {
       font-size: 14px;
       font-weight: 600;
       color: var(--dark);
       margin: 16px 0 8px;
     }
-
-    .section p {
-      color: #334155;
-      margin-bottom: 10px;
-    }
+    .section p { color: #334155; margin-bottom: 10px; }
     .section p:last-child { margin-bottom: 0; }
-
-    .section ul {
-      list-style: none;
-      padding: 0;
-      margin: 8px 0 10px;
-    }
+    .section ul { list-style: none; padding: 0; margin: 8px 0 10px; }
     .section ul li {
       padding: 4px 0 4px 18px;
       position: relative;
@@ -133,7 +113,6 @@
       color: var(--accent);
       font-weight: 700;
     }
-
     .highlight {
       background: #eff6ff;
       border: 1px solid #bfdbfe;
@@ -143,17 +122,8 @@
       color: #1e40af;
       font-size: 14px;
     }
-
-    .rights-grid {
-      display: grid;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .right-item {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-    }
+    .rights-grid { display: grid; gap: 10px; margin-top: 10px; }
+    .right-item { display: flex; gap: 12px; align-items: flex-start; }
     .right-badge {
       flex-shrink: 0;
       background: var(--accent);
@@ -167,7 +137,6 @@
       text-transform: uppercase;
     }
     .right-text { color: #334155; font-size: 14px; }
-
     .contact-card {
       background: var(--dark);
       border-radius: 10px;
@@ -186,8 +155,6 @@
     }
     .contact-label { font-size: 11px; color: var(--muted); letter-spacing: 0.5px; }
     .contact-value { font-size: 14px; color: #fff; font-weight: 500; }
-
-    /* ── Footer ── */
     footer {
       text-align: center;
       padding: 24px;
@@ -195,11 +162,8 @@
       color: var(--muted);
       border-top: 1px solid var(--border);
     }
-
-    /* ── Lang sections ── */
     .lang-section { display: none; }
     .lang-section.active { display: block; }
-
     @media (max-width: 480px) {
       .section { padding: 18px 16px; }
       header h1 { font-size: 20px; }
@@ -215,24 +179,21 @@
 </header>
 
 <div class="lang-bar">
-  <button class="lang-btn active" onclick="setLang('en')">English</button>
-  <button class="lang-btn" onclick="setLang('ua')">Українська</button>
+  <button class="lang-btn active" data-lang="en">English</button>
+  <button class="lang-btn" data-lang="ua">Українська</button>
 </div>
 
 <main>
 
-  <!-- ══ ENGLISH ══════════════════════════════════════════════════════════ -->
+  <!-- ENGLISH -->
   <div class="lang-section active" id="lang-en">
-
     <div class="section">
       <h2>1. Introduction</h2>
       <p>This Privacy Policy describes what information the mobile application <strong>Schengen Calculator</strong> ("App"), developed by <strong>VMSoft</strong>, collects, processes, and stores, and how that information is used. By using the App, you agree to the terms of this Policy.</p>
       <p>We take your privacy seriously and comply with the requirements of the EU General Data Protection Regulation (GDPR) and other applicable laws.</p>
     </div>
-
     <div class="section">
       <h2>2. Data Collected and Processed</h2>
-
       <h3>2.1 Data Stored Locally on Your Device</h3>
       <p>The App stores the following data exclusively on your device (localStorage) and does not transmit it to any servers:</p>
       <ul>
@@ -242,7 +203,6 @@
         <li>Theme preference (light or dark).</li>
       </ul>
       <div class="highlight">We have no access to this data. All calculations are performed entirely on your device without any communication with external servers.</div>
-
       <h3>2.2 Data Collected by Google AdMob</h3>
       <p>The App may use Google AdMob advertising service to display banner advertisements. In this case, Google may collect and process the following data:</p>
       <ul>
@@ -253,7 +213,6 @@
       </ul>
       <p>This data is processed by Google in accordance with the <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--accent)">Google Privacy Policy</a>. We do not have access to this data and do not control its collection.</p>
     </div>
-
     <div class="section">
       <h2>3. Purpose of Data Processing</h2>
       <p>Locally stored data is used exclusively for:</p>
@@ -263,18 +222,15 @@
         <li>Restoring your preferences (language, theme) on the next launch.</li>
       </ul>
     </div>
-
     <div class="section">
       <h2>4. Sharing Data with Third Parties</h2>
       <p>VMSoft <strong>does not sell, transfer, or disclose</strong> any personal user data to third parties, except for Google AdMob to the extent described in Section 2.2 of this Policy.</p>
       <p>We do not use any other analytics services, tracking systems, or telemetry collection.</p>
     </div>
-
     <div class="section">
       <h2>5. Data Retention and Deletion</h2>
       <p>All local data is stored on your device indefinitely until deleted. You can delete all stored data at any time using the <strong>"Reset All"</strong> function in the App, or by uninstalling the App from your device.</p>
     </div>
-
     <div class="section">
       <h2>6. Your Rights (GDPR)</h2>
       <p>Under GDPR, you have the right to:</p>
@@ -284,50 +240,41 @@
         <div class="right-item"><span class="right-badge">Erase</span><span class="right-text">Delete all data via "Reset All" or by uninstalling the App.</span></div>
         <div class="right-item"><span class="right-badge">Object</span><span class="right-text">Opt out of personalised advertising through your device settings.</span></div>
       </div>
-      <p style="margin-top:14px">To exercise any of these rights, please contact us: <a href="mailto:info.vmsoft@gmail.com" style="color:var(--accent)">info.vmsoft@gmail.com</a></p>
+      <p style="margin-top:14px">To exercise any of these rights, please contact us: <a href="mailto:info.vmsoft&#64;gmail.com" style="color:var(--accent)">info.vmsoft&#64;gmail.com</a></p>
     </div>
-
     <div class="section">
       <h2>7. Data Security</h2>
       <p>Since all user data is stored locally on your device, its security is provided by the protective mechanisms of the Android/iOS operating system. VMSoft is not responsible for unauthorised access to data resulting from device compromise.</p>
     </div>
-
     <div class="section">
       <h2>8. Children</h2>
       <p>The App is not intended for persons under the age of 13. We do not knowingly collect data from children. If you become aware that a child has provided us with personal data, please contact us for deletion.</p>
     </div>
-
     <div class="section">
       <h2>9. Changes to This Privacy Policy</h2>
       <p>VMSoft reserves the right to update this Policy. The current version is always available in the App menu and on Google Play. Continued use of the App after changes are made constitutes your acceptance of the updated Policy.</p>
     </div>
-
     <div class="section">
       <h2>10. Contact</h2>
       <div class="contact-card">
-        <div class="contact-icon">✉</div>
+        <div class="contact-icon">&#9993;</div>
         <div>
           <div class="contact-label">VMSoft · Privacy enquiries</div>
-          <div class="contact-value">info.vmsoft@gmail.com</div>
+          <div class="contact-value">info.vmsoft&#64;gmail.com</div>
         </div>
       </div>
     </div>
-
   </div><!-- /lang-en -->
 
-
-  <!-- ══ UKRAINIAN ════════════════════════════════════════════════════════ -->
+  <!-- UKRAINIAN -->
   <div class="lang-section" id="lang-ua">
-
     <div class="section">
       <h2>1. Загальні положення</h2>
       <p>Ця Політика конфіденційності описує, яку інформацію збирає, обробляє та зберігає мобільний додаток <strong>Шенген Калькулятор</strong> («Додаток»), розроблений компанією <strong>VMSoft</strong>, і як ця інформація використовується. Використовуючи Додаток, ви погоджуєтесь з умовами цієї Політики.</p>
       <p>Ми ставимось до конфіденційності ваших даних з максимальною відповідальністю та дотримуємось вимог Загального регламенту захисту даних ЄС (GDPR) та інших застосовних законів.</p>
     </div>
-
     <div class="section">
       <h2>2. Які дані збираються та обробляються</h2>
-
       <h3>2.1 Дані, що зберігаються локально на вашому пристрої</h3>
       <p>Додаток зберігає такі дані виключно на вашому пристрої (localStorage) та не передає їх на жодні сервери:</p>
       <ul>
@@ -337,7 +284,6 @@
         <li>Налаштування теми оформлення (світла або темна).</li>
       </ul>
       <div class="highlight">Ми не маємо доступу до цих даних. Усі обчислення виконуються безпосередньо на вашому пристрої без звернення до зовнішніх серверів.</div>
-
       <h3>2.2 Дані, що збираються рекламним сервісом Google AdMob</h3>
       <p>Додаток може використовувати рекламний сервіс Google AdMob для показу банерної реклами. У такому разі Google може збирати та обробляти такі дані:</p>
       <ul>
@@ -348,7 +294,6 @@
       </ul>
       <p>Обробка цих даних здійснюється Google відповідно до <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--accent)">Політики конфіденційності Google</a>. Ми не маємо доступу до цих даних і не контролюємо їх збір.</p>
     </div>
-
     <div class="section">
       <h2>3. Мета обробки даних</h2>
       <p>Локально збережені дані використовуються виключно для:</p>
@@ -358,18 +303,15 @@
         <li>Відтворення налаштувань (мова, тема) при наступному запуску.</li>
       </ul>
     </div>
-
     <div class="section">
       <h2>4. Передача даних третім особам</h2>
       <p>VMSoft <strong>не продає, не передає і не розкриває</strong> будь-які персональні дані користувачів третім особам, за винятком Google AdMob в обсязі, визначеному розділом 2.2 цієї Політики.</p>
       <p>Ми не використовуємо жодних інших аналітичних сервісів, систем відстеження або збору телеметрії.</p>
     </div>
-
     <div class="section">
       <h2>5. Зберігання та видалення даних</h2>
       <p>Усі локальні дані зберігаються на вашому пристрої необмежений час до моменту їх видалення. Ви можете видалити всі збережені дані в будь-який момент, скориставшись функцією <strong>«Скинути все»</strong> в Додатку, або видаливши Додаток зі свого пристрою.</p>
     </div>
-
     <div class="section">
       <h2>6. Права користувачів (GDPR)</h2>
       <p>Відповідно до GDPR ви маєте право:</p>
@@ -379,67 +321,70 @@
         <div class="right-item"><span class="right-badge">Видалення</span><span class="right-text">Видалити всі дані через «Скинути все» або видалення Додатку.</span></div>
         <div class="right-item"><span class="right-badge">Заперечення</span><span class="right-text">Відмовитись від персоналізованої реклами через налаштування пристрою.</span></div>
       </div>
-      <p style="margin-top:14px">Для реалізації будь-якого з цих прав зверніться: <a href="mailto:info.vmsoft@gmail.com" style="color:var(--accent)">info.vmsoft@gmail.com</a></p>
+      <p style="margin-top:14px">Для реалізації будь-якого з цих прав зверніться: <a href="mailto:info.vmsoft&#64;gmail.com" style="color:var(--accent)">info.vmsoft&#64;gmail.com</a></p>
     </div>
-
     <div class="section">
       <h2>7. Безпека даних</h2>
       <p>Оскільки всі дані зберігаються локально на вашому пристрої, їх безпека забезпечується захисними механізмами операційної системи Android/iOS. VMSoft не несе відповідальності за несанкціонований доступ до даних внаслідок компрометації пристрою.</p>
     </div>
-
     <div class="section">
       <h2>8. Діти</h2>
       <p>Додаток не призначений для осіб віком до 13 років. Ми свідомо не збираємо дані від дітей. Якщо вам відомо, що дитина надала нам персональні дані — зверніться до нас для їх видалення.</p>
     </div>
-
     <div class="section">
       <h2>9. Зміни до Політики конфіденційності</h2>
       <p>VMSoft залишає за собою право вносити зміни до цієї Політики. Поточна версія завжди доступна в меню Додатку та в Google Play. Продовження використання Додатку після внесення змін означає вашу згоду з оновленою Політикою.</p>
     </div>
-
     <div class="section">
       <h2>10. Контактна інформація</h2>
       <div class="contact-card">
-        <div class="contact-icon">✉</div>
+        <div class="contact-icon">&#9993;</div>
         <div>
           <div class="contact-label">VMSoft · Питання конфіденційності</div>
-          <div class="contact-value">info.vmsoft@gmail.com</div>
+          <div class="contact-value">info.vmsoft&#64;gmail.com</div>
         </div>
       </div>
     </div>
-
   </div><!-- /lang-ua -->
 
 </main>
 
 <footer>
-  <p>© 2026 VMSoft. All rights reserved · Всі права захищені.</p>
+  <p>&#169; 2026 VMSoft. All rights reserved · Всі права захищені.</p>
 </footer>
 
 <script>
-  function setLang(lang) {
-    document.querySelectorAll('.lang-section').forEach(function(el) {
-      el.classList.toggle('active', el.id === 'lang-' + lang);
-    });
-    document.querySelectorAll('.lang-btn').forEach(function(btn) {
-      btn.classList.toggle('active', btn.textContent.trim().toLowerCase().startsWith(lang === 'en' ? 'eng' : 'uk'));
-    });
-    if (lang === 'en') {
-      document.getElementById('header-title').textContent = 'Privacy Policy';
-      document.getElementById('header-meta').textContent = 'Version 1.0 · Effective: April 8, 2026';
-      document.documentElement.lang = 'en';
-    } else {
-      document.getElementById('header-title').textContent = 'Політика конфіденційності';
-      document.getElementById('header-meta').textContent = 'Версія 1.0 · Набрання чинності: 8 квітня 2026 р.';
-      document.documentElement.lang = 'uk';
+  document.addEventListener('DOMContentLoaded', function() {
+    function setLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(function(el) {
+        el.classList.toggle('active', el.id === 'lang-' + lang);
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+      if (lang === 'en') {
+        document.getElementById('header-title').textContent = 'Privacy Policy';
+        document.getElementById('header-meta').textContent = 'Version 1.0 \u00b7 Effective: April 8, 2026';
+        document.documentElement.lang = 'en';
+      } else {
+        document.getElementById('header-title').textContent = '\u041f\u043e\u043b\u0456\u0442\u0438\u043a\u0430 \u043a\u043e\u043d\u0444\u0456\u0434\u0435\u043d\u0446\u0456\u0439\u043d\u043e\u0441\u0442\u0456';
+        document.getElementById('header-meta').textContent = '\u0412\u0435\u0440\u0441\u0456\u044f 1.0 \u00b7 \u041d\u0430\u0431\u0440\u0430\u043d\u043d\u044f \u0447\u0438\u043d\u043d\u043e\u0441\u0442\u0456: 8 \u043a\u0432\u0456\u0442\u043d\u044f 2026 \u0440.';
+        document.documentElement.lang = 'uk';
+      }
     }
-  }
 
-  // Auto-detect browser language on load
-  (function() {
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        setLang(btn.getAttribute('data-lang'));
+      });
+    });
+
+    // Auto-detect browser language on load
     var lang = (navigator.language || 'en').toLowerCase();
-    if (lang.startsWith('uk') || lang.startsWith('ua')) setLang('ua');
-  })();
+    if (lang.startsWith('uk') || lang.startsWith('ua')) {
+      setLang('ua');
+    }
+  });
 </script>
 
 </body>
